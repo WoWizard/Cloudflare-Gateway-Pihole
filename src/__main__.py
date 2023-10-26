@@ -20,7 +20,7 @@ def read_urls_from_file(filename):
 async def main():
     adlist_urls = read_urls_from_file("adlist.ini")
     whitelist_urls = read_urls_from_file("whitelist.ini")
-    adlist_name = "DNS-Filters"
+    adlist_name = "AdBlock-DNS Block List"
     app = App(adlist_name, adlist_urls, whitelist_urls)
     await app.delete()  # Leave script
     # await app.run()
